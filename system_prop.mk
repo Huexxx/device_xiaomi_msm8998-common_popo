@@ -17,3 +17,7 @@
 # Camera
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.camera.aux.packagelist=com.android.camera,org.lineageos.snap
+
+# Radio
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
