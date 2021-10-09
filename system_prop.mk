@@ -20,4 +20,5 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Radio
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.sys.fflag.override.settings_network_and_internet_v2=true
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
+    persist.sys.fflag.override.settings_provider_model=false
