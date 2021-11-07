@@ -406,6 +406,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
 # VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor_32 \
     libstdc++.vendor_32 \
