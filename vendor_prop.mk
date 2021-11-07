@@ -173,6 +173,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.rild.libpath=/vendor/lib64/libril-wrapper.so \
     vendor.voice.path.for.pcm.voip=true
 
+# Seamless transfer
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.fflag.override.settings_seamless_transfer=true
+
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sdk.sensors.gestures=false \
