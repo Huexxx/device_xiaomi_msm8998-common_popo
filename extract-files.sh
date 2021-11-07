@@ -29,6 +29,11 @@ ONLY_TARGET=
 KANG=
 SECTION=
 
+# Chiron-Ify
+DEVICE="chiron"
+DEVICE_COMMON="msm8998-common"
+VENDOR="xiaomi"
+
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
         --only-common )
@@ -116,7 +121,6 @@ function blob_fixup() {
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
     setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
-
     extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 

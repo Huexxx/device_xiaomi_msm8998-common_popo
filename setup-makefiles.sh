@@ -21,6 +21,11 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+# Chiron-Ify
+DEVICE="chiron"
+DEVICE_COMMON="msm8998-common"
+VENDOR="xiaomi"
+
 # Initialize the helper for common
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
