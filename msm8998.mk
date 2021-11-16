@@ -28,8 +28,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
@@ -429,9 +428,9 @@ PRODUCT_PACKAGES += \
     libandroid_runtime_lazy.vendor \
     mediametricsservice-aidl-cpp.vendor
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+## Trust HAL
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.trust@1.0-service
 
 # Wifi
 PRODUCT_PACKAGES += \
