@@ -40,9 +40,11 @@ EXTRA_VENDOR_LIBRARIES_32 := \
     libnblog \
     libpackagelistparser \
     libpdx_default_transport \
+    libpermission \
     libselinux \
     libsonivox \
-    libpermission
+    libstdc++
 
 EXTRA_VENDOR_LIBRARIES_64 := \
-    libpowermanager
+    libpowermanager \
+    libstdc++

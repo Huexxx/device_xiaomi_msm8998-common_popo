@@ -409,7 +409,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor_32 \
-    libstdc++.vendor_32 \
+    libstdc++.vendor \
     vndk-ext \
     vndk_package
 
